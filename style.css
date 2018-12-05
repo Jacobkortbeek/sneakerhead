@@ -13,3 +13,229 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+body {
+  font-family: 'KoHo', sans-serif; }
+
+.turntable {
+  margin: 0px; }
+
+.turntable ul {
+  padding: 0px;
+  margin: 0px; }
+
+.turntable ul li {
+  list-style-type: none;
+  display: none; }
+
+.turntable ul li img {
+  width: 100%; }
+
+.turntable ul li.active {
+  display: block; }
+
+.ui.divider {
+  margin: 6em; }
+
+.ui.divider.small {
+  margin: 1em; }
+
+p {
+  font-size: 1.5em; }
+
+h2 {
+  font-size: 3rem !important; }
+
+.home .red {
+  background-color: red; }
+
+.home .yellow {
+  background-color: yellow; }
+
+.home .hero {
+  color: white;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .home .hero h1 {
+    font-size: 5em; }
+
+.home .turntable-ui .turntable {
+  width: 100%; }
+  .home .turntable-ui .turntable ul {
+    display: flex;
+    justify-content: center; }
+
+.home .about .img {
+  width: 100%; }
+  .home .about .img img {
+    width: 100%;
+    height: auto; }
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .home .about .header {
+    height: 5em; } }
+
+.home .portfolio .port {
+  overflow: hidden;
+  margin-bottom: 1.8em;
+  height: 22em; }
+
+.home .gallery img {
+  width: 100%;
+  height: auto; }
+
+.about .about .img {
+  width: 100%; }
+  .about .about .img img {
+    width: 100%;
+    height: auto; }
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .about .about .header {
+    height: 5em; } }
+
+.about .turntable-ui .turntable {
+  width: 100%; }
+  .about .turntable-ui .turntable ul {
+    display: flex;
+    justify-content: center; }
+
+.portfolio .turntable-ui .turntable {
+  width: 100%; }
+  .portfolio .turntable-ui .turntable ul {
+    display: flex;
+    justify-content: center; }
+
+.portfolio .heading {
+  color: white;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .portfolio .heading h1 {
+    font-size: 5em; }
+
+.portfolio .portfolio .port {
+  overflow: hidden;
+  margin-bottom: 1.8em;
+  height: 22em; }
+
+.gallery .heading {
+  color: white;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .gallery .heading h1 {
+    font-size: 5em; }
+
+.gallery .gallery img {
+  width: 100%;
+  height: auto; }
+
+.blog .heading {
+  color: white;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .blog .heading h1 {
+    font-size: 5em; }
+
+.blog .blog {
+  color: black; }
+  .blog .blog img {
+    width: 100%;
+    height: auto; }
+
+.contact .heading {
+  color: white;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .contact .heading h1 {
+    font-size: 5em; }
+
+.contact form label {
+  font-size: 1.3em !important; }
+
+.fourOfour {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .fourOfour .ui .row .sixteen {
+    text-align: center; }
+
+footer {
+  margin-top: 8em;
+  border-top: 0.05em solid grey; }
+  footer .column {
+    border-right: 0.05em solid grey; }
+    footer .column ul {
+      list-style-type: none; }
+    footer .column .content {
+      margin: 5em; }
+
+.loader {
+  z-index: 999;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  width: 100%; }
+  .loader .loaderIcon {
+    position: absolute;
+    top: 50%;
+    right: 50%; }
+  .loader .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px; }
+  .loader .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent; }
+  .loader .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s; }
+  .loader .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s; }
+  .loader .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s; }
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }

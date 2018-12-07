@@ -1,3 +1,3 @@
-<?php wp_header(); ?>
+<?php get_header(); ?>
 Hello world
-<?php wp_footer(); ?>
+<?php get_footer(); ?>

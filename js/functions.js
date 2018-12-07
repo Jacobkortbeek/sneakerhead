@@ -145,4 +145,4 @@ $('.ui.sticky')
     context: 'main'
   });
 
-}
+})

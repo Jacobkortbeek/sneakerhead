@@ -3,14 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/semantic/semantic.min.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="assets/css/semantic/semantic.min.js"></script>
-    <script src="assets/js/turntable.js"></script>
-    <link rel="stylesheet" href="assets/css/direction-reveal/direction-reveal.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/turntable.css">
     <?php wp_head(); ?>
     <title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
   </head>

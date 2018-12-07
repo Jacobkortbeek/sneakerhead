@@ -30,12 +30,6 @@
     </div>
   </div>
 </div>
-
-  <script src="assets/js/typed.js"></script>
-  <script src="assets/js/responsify.js"></script>
-  <script src="assets/js/jquery.matchHeight.js"></script>
-  <script src="assets/js/direction-reveal/bundle.js"></script>
-  <script src="assets/js/functions.js"></script>
   <?php footer(); ?>
 </footer>
 </div>

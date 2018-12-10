@@ -4,7 +4,7 @@
 <main class="home">
 
   <!-- HERO -->
-  <div class="hero ui center aligned segment" style="background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./assets/img/nicholas-bui-634691-unsplash.jpg')!important;">
+  <div class="hero ui center aligned segment" style="background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url(<?php $hero_background_image = get_field( 'hero_background_image' ); ?> <?php if ( $hero_background_image ) { ?>'<?php echo $hero_background_image['url']; ?>')!important;<?php } ?>">
     <div class="ui text container">
       <?php if( get_field( 'hero_text' ) ) : ?>
         <h1><?php the_field( 'hero_text' ); ?></h1>

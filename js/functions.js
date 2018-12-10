@@ -63,7 +63,7 @@ console.log($count);
 
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
-    window['p'+i] = $(".sentences p").textContent;
+    window['p'+i] = document.getElementById( 'test1' ).textContent;
     console.log(['p'+i]);
   }
 }

@@ -63,9 +63,10 @@ console.log($count);
 
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
+    let typeId = 'test' + i;
     var p = "ty" + i;
     console.log(p);
-    var p = document.getElementById( 'test1' ).textContent;
+    var p = document.getElementById( typeId ).textContent;
     console.log(p);
   }
 }

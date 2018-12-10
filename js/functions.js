@@ -63,7 +63,8 @@ console.log($count);
 
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
-    console.log('here we are');
+    var test+i = $(".sentences p").textContent;
+    console.log(test+i);
   }
 }
 

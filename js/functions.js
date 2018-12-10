@@ -55,6 +55,8 @@ window.setInterval(function(){
 var test = document.getElementById( 'test1' ).textContent;
 var test2 = document.getElementById( 'test2' ).textContent;
 
+console.log(typeof test);
+
 var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
 var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
 var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;

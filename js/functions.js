@@ -63,9 +63,8 @@ console.log($count);
 
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
-    eval("sentence" + i "=senetence[i]");
-    var senetence[i] = $(".sentences p").textContent;
-    console.log(senetence[i]);
+    var senetence.i = $(".sentences p").textContent;
+    console.log(senetence.i);
   }
 }
 

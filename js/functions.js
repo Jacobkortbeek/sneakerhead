@@ -52,7 +52,8 @@ window.setInterval(function(){
   color5 = randoColor();
 }, 12000);
 
-var test = document.getElementById( 'test' ).textContent;
+var test = document.getElementById( 'test1' ).textContent;
+var test2 = document.getElementById( 'test2' ).textContent;
 
 var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
 var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
@@ -80,7 +81,7 @@ let $typedId = $('h2[id]');
 
 if($typedId.length){
   var typed3 = new Typed('#typed', {
-      strings: [test],
+      strings: [test, test2],
       typeSpeed: 100,
       backSpeed: 25,
       smartBackspace: true, // this is a default
@@ -91,7 +92,7 @@ if($typedId.length){
 
     window.setInterval(function(){
         var typed3 = new Typed('#typed', {
-            strings: [test],
+            strings: [test, test2],
             typeSpeed: 100,
             backSpeed: 25,
             smartBackspace: true, // this is a default

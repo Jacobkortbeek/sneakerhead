@@ -15,12 +15,17 @@
   <div class="ui hidden divider"></div>
 
   <!-- Turntable -->
+  <?php if( have_rows('turntable_images') ): ?>
+
+
   <div class="turntable-ui ui grid" id="myTurntable">
     <div class="sixteen wide column">
       <div class="turntable">
         <ul>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img01.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img02.jpg"></li>
+          <?php while ( have_rows('turntable_images') ) : the_row(); ?>
+          <li data-img-src="<?php the_sub_field('sub_field_name'); ?>"></li>
+        <?php endwhile; ?>
+          <!-- <li data-img-src="./assets/img/sneaker/sneaker-home/img02.jpg"></li>
           <li data-img-src="./assets/img/sneaker/sneaker-home/img03.jpg"></li>
           <li data-img-src="./assets/img/sneaker/sneaker-home/img04.jpg"></li>
           <li data-img-src="./assets/img/sneaker/sneaker-home/img05.jpg"></li>
@@ -53,11 +58,12 @@
           <li data-img-src="./assets/img/sneaker/sneaker-home/img32.jpg"></li>
           <li data-img-src="./assets/img/sneaker/sneaker-home/img33.jpg"></li>
           <li data-img-src="./assets/img/sneaker/sneaker-home/img34.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img36.jpg"></li>
+          <li data-img-src="./assets/img/sneaker/sneaker-home/img36.jpg"></li> -->
         </ul>
       </div>
     </div>
   </div>
+<?php endif; ?>
 
   <div class="ui hidden divider"></div>
 

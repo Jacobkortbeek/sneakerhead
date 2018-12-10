@@ -52,19 +52,21 @@ window.setInterval(function(){
   color5 = randoColor();
 }, 12000);
 
-// var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
-// var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
-// var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
-// var string4 = `Why we are passionate about <strong style="color: ${ color4 }">Art</strong>`;
-// var string5 = `Why we are passionate about <strong style="color: ${ color5 }">Brands</strong>`;
-//
-// window.setInterval(function(){
-//   string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
-//   string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
-//   string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
-//   string4 = `Why we are passionate about <strong style="color: ${ color4 }">Art</strong>`;
-//   string5 = `Why we are passionate about <strong style="color: ${ color5 }">Brands</strong>`;
-// }, 12001);
+var test = document.getElementById( 'test' ).textContent;
+
+var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
+var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
+var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
+var string4 = `Why we are passionate about <strong style="color: ${ color4 }">Art</strong>`;
+var string5 = `Why we are passionate about <strong style="color: ${ color5 }">Brands</strong>`;
+
+window.setInterval(function(){
+  string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
+  string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
+  string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
+  string4 = `Why we are passionate about <strong style="color: ${ color4 }">Art</strong>`;
+  string5 = `Why we are passionate about <strong style="color: ${ color5 }">Brands</strong>`;
+}, 12001);
 
 function randoColor() {
   var rannumber1=Math.floor(Math.random() * 256 );
@@ -78,7 +80,7 @@ let $typedId = $('h2[id]');
 
 if($typedId.length){
   var typed3 = new Typed('#typed', {
-      strings: [string1, string5, string3, string4, string1],
+      strings: [string1, string5, string3, string4, string1, test],
       typeSpeed: 100,
       backSpeed: 25,
       smartBackspace: true, // this is a default

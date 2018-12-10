@@ -59,7 +59,7 @@ console.log(test);
 console.log(test2);
 
 var $count = $(".sentences p").length;
-console.log(count);
+console.log($count);
 
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {

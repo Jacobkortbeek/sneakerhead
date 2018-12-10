@@ -60,12 +60,10 @@ console.log(test2);
 
 var $count = $(".sentences p").length;
 console.log($count);
-var markers = [];
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
     let typeId = 'test' + i;
-    var p[i] = document.getElementById( typeId ).textContent;
-    console.log(p);
+    this["p"+i] = document.getElementById( typeId ).textContent;
   }
 }
 

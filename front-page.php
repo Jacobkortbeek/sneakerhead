@@ -7,7 +7,7 @@
   <div class="hero ui center aligned segment" style="background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./assets/img/nicholas-bui-634691-unsplash.jpg')!important;">
     <div class="ui text container">
       <?php if( get_field( 'hero_text' ) ) : ?>
-        <?php the_field( 'hero_text' ); ?>
+        <h1><?php the_field( 'hero_text' ); ?></h1>
       <?php endif; ?>
     </div>
   </div>

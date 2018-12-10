@@ -71,19 +71,19 @@ if ( $count > 0 ) {
   }
 }
 
-var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
-var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
-var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
-var string4 = `Why we are passionate about <strong style="color: ${ color4 }">Art</strong>`;
-var string5 = `Why we are passionate about <strong style="color: ${ color5 }">Brands</strong>`;
-
-window.setInterval(function(){
-  string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
-  string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
-  string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
-  string4 = `Why we are passionate about <strong style="color: ${ color4 }">Art</strong>`;
-  string5 = `Why we are passionate about <strong style="color: ${ color5 }">Brands</strong>`;
-}, 12001);
+// var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
+// var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
+// var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
+// var string4 = `Why we are passionate about <strong style="color: ${ color4 }">Art</strong>`;
+// var string5 = `Why we are passionate about <strong style="color: ${ color5 }">Brands</strong>`;
+//
+// window.setInterval(function(){
+//   string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
+//   string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
+//   string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
+//   string4 = `Why we are passionate about <strong style="color: ${ color4 }">Art</strong>`;
+//   string5 = `Why we are passionate about <strong style="color: ${ color5 }">Brands</strong>`;
+// }, 12001);
 
 function randoColor() {
   var rannumber1=Math.floor(Math.random() * 256 );
@@ -94,7 +94,7 @@ function randoColor() {
 }
 
 let $typedId = $('h2[id]');
-
+console.log('here: 'ty1);
 if($typedId.length){
   var typed3 = new Typed('#typed', {
       strings: [test, test, test2],

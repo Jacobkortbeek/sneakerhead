@@ -61,6 +61,11 @@ console.log(test2);
 var count = $(".sentences p").length;
 console.log(count);
 
+if ( count < 0 ) {
+  for (let i = 0; i < count ; i++) {
+    console.log('here we are');
+  }
+}
 
 var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
 var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;

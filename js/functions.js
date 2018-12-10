@@ -58,6 +58,10 @@ var test2 = document.getElementById( 'test2' ).textContent;
 console.log(test);
 console.log(test2);
 
+var length = document.getElementsByTagName(" sentences p").length;
+console.log(lenght);
+
+
 var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
 var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
 var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;

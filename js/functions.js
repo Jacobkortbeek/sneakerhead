@@ -60,11 +60,11 @@ console.log(test2);
 
 var $count = $(".sentences p").length;
 console.log($count);
-
+var markers = [];
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
     let typeId = 'test' + i;
-    let p[i] = document.getElementById( typeId ).textContent;
+    var p[i] = document.getElementById( typeId ).textContent;
     console.log(p);
   }
 }
@@ -92,7 +92,7 @@ function randoColor() {
 }
 
 let $typedId = $('h2[id]');
-console.log('here: ', p);
+console.log('here: ', p2);
 if($typedId.length){
   var typed3 = new Typed('#typed', {
       strings: [test, test, test2],

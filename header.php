@@ -14,7 +14,7 @@
     </div>
   </div>
 
-    <div class="ui sticky top attached menu fixed top" id="menu">
+    <div class="ui top attached sticky menu fixed top" id="menu">
 <a class="item">
   <i class="sidebar icon"></i>
   Menu

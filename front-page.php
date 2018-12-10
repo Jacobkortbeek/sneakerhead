@@ -36,6 +36,19 @@
   <!-- About -->
   <div class="about ui grid stackable container">
     <div class="sixteen wide column">
+      <script type="text/javascript">
+
+      <?php  if( have_rows( 'typed_colour_words' ) ): $i = 0; while ( have_rows( 'typed_colour-words' ) ) : the_row(); ?>
+      var string<?php echo $i; ?> = `<?php the_field( 'typed_main_sentence' ); ?> <strong style="color: ${ color1 }"><?php the_sub_field( 'coloured_word' ); ?></strong>`;
+      <?php $i++ endwhile; endif; ?>
+
+      window.setInterval(function(){
+        <?php  if( have_rows( 'typed_colour_words' ) ): $i = 0; while ( have_rows( 'typed_colour-words' ) ) : the_row(); ?>
+        var string<?php echo $i; ?> = `<?php the_field( 'typed_main_sentence' ); ?> <strong style="color: ${ color1 }"><?php the_sub_field( 'coloured_word' ); ?></strong>`;
+        <?php $i++ endwhile; endif; ?>
+      }, 12001);
+      </script>
+
       <h2 class="ui huge header" id="typed"> <strong></strong> </h2>
     </div>
     <div class="two column row">

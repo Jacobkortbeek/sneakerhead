@@ -23,7 +23,7 @@
       <div class="turntable">
         <ul>
           <?php while ( have_rows('turntable_images') ) : the_row(); ?>
-          <li data-img-src="<?php the_sub_field('sub_field_name'); ?>"></li>
+          <li data-img-src="<?php the_sub_field('image'); ?>"></li>
         <?php endwhile; ?>
           <!-- <li data-img-src="./assets/img/sneaker/sneaker-home/img02.jpg"></li>
           <li data-img-src="./assets/img/sneaker/sneaker-home/img03.jpg"></li>

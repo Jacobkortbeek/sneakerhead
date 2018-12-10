@@ -58,7 +58,7 @@ var test2 = document.getElementById( 'test2' ).textContent;
 console.log(test);
 console.log(test2);
 
-var length = document.getElementsByTagName(" sentences p").length;
+var length = document.getElementsByTagName("sentences p").length;
 console.log(lenght);
 
 

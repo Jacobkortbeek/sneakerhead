@@ -63,8 +63,10 @@ console.log($count);
 
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
-    var [p+i] = document.getElementById( 'test1' ).textContent;
-    console.log(['p'+i]);
+    var p = "ty" + i;
+    console.log(p);
+    var p = document.getElementById( 'test1' ).textContent;
+    console.log(p);
   }
 }
 

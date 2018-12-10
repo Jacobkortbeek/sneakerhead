@@ -80,7 +80,7 @@ let $typedId = $('h2[id]');
 
 if($typedId.length){
   var typed3 = new Typed('#typed', {
-      strings: [string1, string5, string3, string4, string1, test],
+      strings: [test],
       typeSpeed: 100,
       backSpeed: 25,
       smartBackspace: true, // this is a default
@@ -91,7 +91,7 @@ if($typedId.length){
 
     window.setInterval(function(){
         var typed3 = new Typed('#typed', {
-            strings: [string1, string5, string3, string4, string1, test],
+            strings: [test],
             typeSpeed: 100,
             backSpeed: 25,
             smartBackspace: true, // this is a default

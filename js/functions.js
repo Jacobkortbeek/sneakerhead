@@ -63,7 +63,7 @@ console.log($count);
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
     let typeId = 'test' + i;
-    eval('p'+i) = document.getElementById( typeId ).textContent;
+    let eval('p'+i) = document.getElementById( typeId ).textContent;
   }
 }
 

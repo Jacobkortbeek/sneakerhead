@@ -84,7 +84,7 @@ let $typedId = $('h2[id]');
 
 if($typedId.length){
   var typed3 = new Typed('#typed', {
-      strings: [test, test2],
+      strings: [test, test, test2],
       typeSpeed: 100,
       backSpeed: 25,
       smartBackspace: true, // this is a default

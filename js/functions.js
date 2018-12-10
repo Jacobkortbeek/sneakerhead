@@ -52,18 +52,18 @@ window.setInterval(function(){
   color5 = randoColor();
 }, 12000);
 
-var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
-var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
-var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
-var string4 = `Why we are passionate about <strong style="color: ${ color4 }">Art</strong>`;
-var string5 = `Why we are passionate about <strong style="color: ${ color5 }">Brands</strong>`;
+var string1 = `<?php the_field( 'main_typed_scentence' ); ?> <strong style="color: ${ color1 }">Sneakers</strong>`;
+var string2 = `<?php the_field( 'main_typed_scentence' ); ?> <strong style="color: ${ color2 }">Sneakers</strong>`;
+var string3 = `<?php the_field( 'main_typed_scentence' ); ?> <strong style="color: ${ color3 }">Design</strong>`;
+var string4 = `<?php the_field( 'main_typed_scentence' ); ?> <strong style="color: ${ color4 }">Art</strong>`;
+var string5 = `<?php the_field( 'main_typed_scentence' ); ?> <strong style="color: ${ color5 }">Brands</strong>`;
 
 window.setInterval(function(){
-  string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
-  string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
-  string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
-  string4 = `Why we are passionate about <strong style="color: ${ color4 }">Art</strong>`;
-  string5 = `Why we are passionate about <strong style="color: ${ color5 }">Brands</strong>`;
+  string1 = `<?php the_field( 'main_typed_scentence' ); ?> <strong style="color: ${ color1 }">Sneakers</strong>`;
+  string2 = `<?php the_field( 'main_typed_scentence' ); ?> <strong style="color: ${ color2 }">Sneakers</strong>`;
+  string3 = `<?php the_field( 'main_typed_scentence' ); ?> <strong style="color: ${ color3 }">Design</strong>`;
+  string4 = `<?php the_field( 'main_typed_scentence' ); ?> <strong style="color: ${ color4 }">Art</strong>`;
+  string5 = `<?php the_field( 'main_typed_scentence' ); ?> <strong style="color: ${ color5 }">Brands</strong>`;
 }, 12001);
 
 function randoColor() {

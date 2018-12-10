@@ -36,7 +36,9 @@
   <!-- About -->
   <div class="about ui grid stackable container">
     <div class="sixteen wide column">
-      <p id="test">Hellow World</p>
+      <?php if( have_rows( 'typed_colour_words' ) ) : while ( have_rows( 'typed_colour_words' ) ) : the_row(); ?>
+      <p id="test"><?php the_field( 'typed_main_sentence' ); ?> <?php the_sub_field( 'coloured_word' ); ?></p>
+    <?php endwhile; endif; ?>
       <h2 class="ui huge header" id="typed"> <strong></strong> </h2>
     </div>
     <div class="two column row">

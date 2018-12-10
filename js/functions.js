@@ -58,11 +58,11 @@ var test2 = document.getElementById( 'test2' ).textContent;
 console.log(test);
 console.log(test2);
 
-var count = $(".sentences p").length;
+var $count = $(".sentences p").length;
 console.log(count);
 
-if ( count < 0 ) {
-  for (let i = 0; i < count ; i++) {
+if ( $count > 0 ) {
+  for (let i = 0; i < $count ; i++) {
     console.log('here we are');
   }
 }

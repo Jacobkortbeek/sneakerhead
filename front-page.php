@@ -70,7 +70,6 @@
 
   <div class="ui grid stackable container portfolio direction-reveal direction-reveal--demo-swing">
     <div class="two column row">
-      <div class="column">
         <?php
 
           $num_posts = get_option( 'posts_per_page' );
@@ -86,6 +85,7 @@
         ?>
         <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
           <?php if( $i < 4 ) : ?>
+            <div class="column">
         <div class="port">
           <a href="#" class="direction-reveal__card">
             <img src="<?php if ( get_field( 'portfolio_image') ) { ?>
@@ -98,46 +98,12 @@
             </div>
           </a>
         </div>
+        </div>
       <?php endif; ?>
         <?php $i++;?>
         <?php endwhile; endif; wp_reset_postdata(); ?>
-      </div>
-      <div class="column">
-        <div class="port">
-          <a href="#" class="direction-reveal__card">
-            <img src="./assets/img/resized/satria-aditya-782549-unsplash.jpg" alt="Image" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66">
 
-            <div class="direction-reveal__overlay direction-reveal__anim--in">
-              <h3 class="direction-reveal__title">Lorem ipsum</h3>
-              <p class="direction-reveal__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore eritatis et quasi.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="column">
-        <div class="port">
-          <a href="#" class="direction-reveal__card">
-            <img src="./assets/img/resized/joseph-barrientos-82309-unsplash.jpg" alt="Image" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66">
 
-            <div class="direction-reveal__overlay direction-reveal__anim--in">
-              <h3 class="direction-reveal__title">Lorem ipsum</h3>
-              <p class="direction-reveal__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore eritatis et quasi.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="column">
-        <div class="port">
-          <a href="#" class="direction-reveal__card">
-            <img src="./assets/img/resized/xavier-teo-469050-unsplash.jpg" alt="Image" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66">
-
-            <div class="direction-reveal__overlay direction-reveal__anim--in">
-              <h3 class="direction-reveal__title">Lorem ipsum</h3>
-              <p class="direction-reveal__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore eritatis et quasi.</p>
-            </div>
-          </a>
-        </div>
-      </div>
   </div>
 </div>
 

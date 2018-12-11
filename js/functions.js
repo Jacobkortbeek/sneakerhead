@@ -59,6 +59,7 @@ console.log(test);
 console.log(test2);
 
 var $count = $(".sentences p").length;
+var $mainSentence = $(".mainSentences p").length;
 var $pArray = [];
 console.log($count);
 if ( $count > 0 ) {
@@ -94,6 +95,7 @@ function randoColor() {
 let $typedId = $('h2[id]');
 console.log('here: ', p2);
 console.log('array: ', $pArray);
+.console.log($mainSentence);
 if($typedId.length){
   var typed3 = new Typed('#typed', {
       strings: $pArray,

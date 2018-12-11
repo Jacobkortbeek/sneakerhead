@@ -149,7 +149,7 @@ if($typedId.length){
 
       var $colors = [];
       var $stringArray = [];
-      
+
       if ( $pLength > 0 ) {
         for (let i = 0; i < $pLength ; i++){
           window ['color'+i] = randoColor();
@@ -170,7 +170,7 @@ if($typedId.length){
             typeSpeed: 100,
             backSpeed: 25,
             smartBackspace: true, // this is a default
-            loop: true,
+            loop: false,
             showCursor: false,
             autoInsertCss: false
           });

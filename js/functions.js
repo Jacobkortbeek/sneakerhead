@@ -147,6 +147,9 @@ if($typedId.length){
 
     window.setInterval(function(){
 
+      var $colors = [];
+      var $stringArray = [];
+      
       if ( $pLength > 0 ) {
         for (let i = 0; i < $pLength ; i++){
           window ['color'+i] = randoColor();

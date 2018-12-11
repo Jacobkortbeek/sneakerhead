@@ -1,4 +1,25 @@
 <?php
+
+add_theme_support( 'menus' );
+add_theme_support( 'post-thumbnails' );
+
+function create_posttype() {
+
+  register_post_type( 'portfolio',
+  // CPT Options
+      array(
+          'labels' => array(
+              'name' => __( 'Portfolio' ),
+              'singular_name' => __( 'Portfolio' ),
+              'menu_name'           => __( 'Portfolio')
+          ),
+          'public' => true,
+          'has_archive' => true,
+          'rewrite' => array('slug' => 'Portfolio'),
+      )
+  );
+}
+
   function wpt_theme_styles() {
     wp_enqueue_style( 'font', 'https://fonts.googleapis.com/css?family=KoHo' );
     wp_enqueue_style( 'semantic_ui', get_template_directory_uri() . '/css/semantic.min.css' );

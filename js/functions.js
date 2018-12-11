@@ -70,6 +70,8 @@ if ( $count > 0 ) {
   }
 }
 
+var $pLength = $pArray.length;
+
 // var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
 // var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
 // var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
@@ -96,6 +98,7 @@ let $typedId = $('h2[id]');
 console.log('here: ', p2);
 console.log('array: ', $pArray);
 console.log($mainSentence);
+console.log('length: ', $pLength);
 if($typedId.length){
   var typed3 = new Typed('#typed', {
       strings: $pArray,

@@ -3,6 +3,7 @@ jQuery(document).ready(function($) {
 $(window).on("load", function() {
   window.setInterval(function(){
     $('.loader').css("display", "none");
+    $('.mainSentences', '.sentences').css("display", "none");
   }, 3000);
   console.log("window load");
 });

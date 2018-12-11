@@ -64,7 +64,7 @@ if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
     let typeId = 'test' + i;
     window ['p'+i] = document.getElementById( typeId ).textContent;
-    var pArray = [p+i];
+    var pArray = ['p'+i];
   }
 }
 

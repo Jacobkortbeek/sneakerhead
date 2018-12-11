@@ -79,6 +79,14 @@ if ( $pLength > 0 ) {
   }
 }
 
+window.setInterval(function(){
+  if ( $pLength > 0 ) {
+    for (let i = 0; i < $pLength ; i++){
+      window ['color'+i] = randoColor();
+      $colors.push('color'+i);
+    }
+  }
+}, 12000);
 
 var $stringArray = [];
 if ( $pLength > 0 ) {
@@ -88,6 +96,16 @@ if ( $pLength > 0 ) {
   }
 }
 $stringArray.push(string0);
+
+window.setInterval(function(){
+  if ( $pLength > 0 ) {
+    for (let i = 0; i < $pLength ; i++){
+      window ['string'+i] = $mainSentence + `<strong style="color: ${ eval('color'+i) }">${ eval('p'+i) }</strong>`;
+      $stringArray.push(eval('string'+i));
+    }
+  }
+  $stringArray.push(string0);
+}, 12001);
 // var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
 // var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
 // var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;

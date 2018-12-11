@@ -67,19 +67,40 @@
   <div class="ui hidden divider"></div>
 
   <!-- Portfolio -->
+
   <div class="ui grid stackable container portfolio direction-reveal direction-reveal--demo-swing">
     <div class="two column row">
       <div class="column">
+        <?php
+
+          $num_posts = get_option( 'posts_per_page' );
+
+          $args = array(
+            'post_type' => 'portfolio',
+            'posts_per_page' => $num_posts,
+            'orderby' => 'post_date'
+          );
+
+          $query = new WP_Query( $args );
+
+        ?>
+        <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+          <?php if( $i < 4 ) : ?>
         <div class="port">
           <a href="#" class="direction-reveal__card">
-            <img src="./assets/img/resized/hermes-rivera-770599-unsplash.jpg" alt="Image" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66">
+            <img src="<?php if ( get_field( 'portfolio_image') ) { ?>
+      	                                                   <?php the_field( 'portfolio_image' ); ?>
+                                                           <?php } ?>" alt="Image" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66">
 
             <div class="direction-reveal__overlay direction-reveal__anim--in">
-              <h3 class="direction-reveal__title">Lorem ipsum</h3>
-              <p class="direction-reveal__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore eritatis et quasi.</p>
+              <h3 class="direction-reveal__title"><?php the_title(); ?></h3>
+              <p class="direction-reveal__text"><?php the_content(); ?></p>
             </div>
           </a>
         </div>
+      <?php endif; ?>
+        <?php $i++;?>
+        <?php endwhile; endif; wp_reset_postdata(); ?>
       </div>
       <div class="column">
         <div class="port">

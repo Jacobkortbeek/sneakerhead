@@ -34,7 +34,6 @@ let string;
 var $count = $(".sentences p").length;
 var $mainSentence = document.getElementById( 'main' ).textContent;
 var $pArray = [];
-console.log($count);
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
     let typeId = 'test' + i;
@@ -70,11 +69,7 @@ function randoColor() {
 }
 
 let $typedId = $('h2[id]');
-console.log(string2);
-console.log('here: ', p2);
-console.log('array: ', $pArray);
-console.log($mainSentence);
-console.log('length: ', $pLength);
+
 if($typedId.length){
   var typed3 = new Typed('#typed', {
       strings: $stringArray,
@@ -115,8 +110,6 @@ if($typedId.length){
             showCursor: false,
             autoInsertCss: false
           });
-
-          console.log('array: ', $stringArray);
 
     }, 15000);
 }

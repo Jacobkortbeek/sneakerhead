@@ -71,10 +71,11 @@ if ( $count > 0 ) {
 }
 
 var $pLength = $pArray.length;
-
+var stringArray = []
 if ( $pLength > 0 ) {
   for (let i = 0; i < $pLength ; i++){
     window ['string'+i] = $mainSentence + `<strong style="color: ${ color1 }">${ eval('p'+i) }</strong>`;
+    $pArray.push(eval('string'+i));
   }
 }
 
@@ -108,7 +109,7 @@ console.log($mainSentence);
 console.log('length: ', $pLength);
 if($typedId.length){
   var typed3 = new Typed('#typed', {
-      strings: $pArray,
+      strings: $stringArray,
       typeSpeed: 100,
       backSpeed: 25,
       smartBackspace: true, // this is a default

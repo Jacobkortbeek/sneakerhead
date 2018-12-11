@@ -72,6 +72,12 @@ if ( $count > 0 ) {
 
 var $pLength = $pArray.length;
 
+if ( $pLength > 0 ) {
+  for (let i = 0; i < $pLength ; i++){
+    window ['string'+i] = $mainSentence + `<strong style="color: ${ color1 }">`eval('p'+i)`</strong>`;
+  }
+}
+
 // var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
 // var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
 // var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
@@ -95,6 +101,7 @@ function randoColor() {
 }
 
 let $typedId = $('h2[id]');
+console.log(string2);
 console.log('here: ', p2);
 console.log('array: ', $pArray);
 console.log($mainSentence);

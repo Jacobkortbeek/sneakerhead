@@ -59,12 +59,14 @@ console.log(test);
 console.log(test2);
 
 var $count = $(".sentences p").length;
+var pArray = new Array();
 console.log($count);
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
     let typeId = 'test' + i;
     window ['p'+i] = document.getElementById( typeId ).textContent;
-    var pArray = ['p'+i];
+    pArray[i]=p;
+    p++;
   }
 }
 

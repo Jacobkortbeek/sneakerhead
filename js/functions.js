@@ -86,7 +86,7 @@ window.setInterval(function(){
       $colors.push('color'+i);
     }
   }
-}, 15000);
+}, 30000);
 
 var $stringArray = [];
 if ( $pLength > 0 ) {
@@ -105,7 +105,7 @@ window.setInterval(function(){
     }
   }
   $stringArray.push(string0);
-}, 15000);
+}, 30001);
 // var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
 // var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
 // var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;

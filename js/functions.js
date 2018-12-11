@@ -4,6 +4,7 @@ $(window).on("load", function() {
   window.setInterval(function(){
     $('.loader').css("display", "none");
     $('.mainSentences').css("display", "none");
+    $('.sentences').css("display", "none");
   }, 3000);
   console.log("window load");
 });

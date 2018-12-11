@@ -37,7 +37,7 @@
   <div class="about ui grid stackable container">
     <div class="sixteen wide column">
       <div class="mainSentences">
-        <p><?php the_field( 'typed_main_sentence' ); ?></p>
+        <p id="main"><?php the_field( 'typed_main_sentence' ); ?></p>
       </div>
 
       <div class="sentences">

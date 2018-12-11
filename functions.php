@@ -19,6 +19,7 @@ function create_posttype() {
       )
   );
 }
+add_action( 'init', 'create_posttype' );
 
   function wpt_theme_styles() {
     wp_enqueue_style( 'font', 'https://fonts.googleapis.com/css?family=KoHo' );

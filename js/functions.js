@@ -38,6 +38,14 @@ window.setInterval(function(){
   var ranrgb="rgb("+rannumber1+","+rannumber2+","+rannumber3+")";
 }, 1050);
 
+function randoColor() {
+  var rannumber1=Math.floor(Math.random() * 256 );
+  var rannumber2=Math.floor(Math.random() * 256 );
+  var rannumber3=Math.floor(Math.random() * 256 );
+  var ranrgb="rgb("+rannumber1+","+rannumber2+","+rannumber3+")";
+  return ranrgb;
+}
+
 // var color1 = randoColor();
 // var color2 = randoColor();
 // var color3 = randoColor();

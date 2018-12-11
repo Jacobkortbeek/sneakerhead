@@ -79,14 +79,14 @@ if ( $pLength > 0 ) {
   }
 }
 
-window.setInterval(function(){
-  if ( $pLength > 0 ) {
-    for (let i = 0; i < $pLength ; i++){
-      window ['color'+i] = randoColor();
-      $colors.push('color'+i);
-    }
-  }
-}, 30000);
+// window.setInterval(function(){
+//   if ( $pLength > 0 ) {
+//     for (let i = 0; i < $pLength ; i++){
+//       window ['color'+i] = randoColor();
+//       $colors.push('color'+i);
+//     }
+//   }
+// }, 30000);
 
 var $stringArray = [];
 if ( $pLength > 0 ) {
@@ -97,15 +97,15 @@ if ( $pLength > 0 ) {
 }
 $stringArray.push(string0);
 
-window.setInterval(function(){
-  if ( $pLength > 0 ) {
-    for (let i = 0; i < $pLength ; i++){
-      window ['string'+i] = $mainSentence + `<strong style="color: ${ eval('color'+i) }">${ eval('p'+i) }</strong>`;
-      $stringArray.push(eval('string'+i));
-    }
-  }
-  $stringArray.push(string0);
-}, 30001);
+// window.setInterval(function(){
+//   if ( $pLength > 0 ) {
+//     for (let i = 0; i < $pLength ; i++){
+//       window ['string'+i] = $mainSentence + `<strong style="color: ${ eval('color'+i) }">${ eval('p'+i) }</strong>`;
+//       $stringArray.push(eval('string'+i));
+//     }
+//   }
+//   $stringArray.push(string0);
+// }, 30001);
 // var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
 // var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
 // var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
@@ -146,6 +146,22 @@ if($typedId.length){
     });
 
     window.setInterval(function(){
+
+      if ( $pLength > 0 ) {
+        for (let i = 0; i < $pLength ; i++){
+          window ['color'+i] = randoColor();
+          $colors.push('color'+i);
+        }
+      }
+
+      if ( $pLength > 0 ) {
+        for (let i = 0; i < $pLength ; i++){
+          window ['string'+i] = $mainSentence + `<strong style="color: ${ eval('color'+i) }">${ eval('p'+i) }</strong>`;
+          $stringArray.push(eval('string'+i));
+        }
+      }
+      $stringArray.push(string0);
+
         var typed3 = new Typed('#typed', {
             strings: $stringArray,
             typeSpeed: 100,

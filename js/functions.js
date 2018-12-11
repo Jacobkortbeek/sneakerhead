@@ -87,7 +87,7 @@ if ( $pLength > 0 ) {
     $stringArray.push(eval('string'+i));
   }
 }
-
+$stringArray.push(string0);
 // var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
 // var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
 // var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;

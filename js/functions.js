@@ -95,7 +95,7 @@ function randoColor() {
 let $typedId = $('h2[id]');
 console.log('here: ', p2);
 console.log('array: ', $pArray);
-.console.log($mainSentence);
+console.log($mainSentence);
 if($typedId.length){
   var typed3 = new Typed('#typed', {
       strings: $pArray,

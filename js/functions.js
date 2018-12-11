@@ -155,7 +155,7 @@ if($typedId.length){
             showCursor: false,
             autoInsertCss: false
           });
-    }, 12000);
+    }, 15000);
 }
 
 

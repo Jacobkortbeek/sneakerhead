@@ -36,8 +36,8 @@
   <!-- About -->
   <div class="about ui grid stackable container">
     <div class="sixteen wide column">
+      <p id="mainSentence"><?php the_field( 'typed_main_sentence' ); ?></p>
       <div class="sentences">
-        <p id="mainSentence"><?php the_field( 'typed_main_sentence' ); ?></p>
         <?php if( have_rows( 'typed_colour_words' ) ) : $i = 0; while ( have_rows( 'typed_colour_words' ) ) : the_row(); ?>
         <p id="test<?php echo $i; ?>"> <?php the_sub_field( 'coloured_word' ); ?></p>
       <?php $i++; endwhile; endif; ?>

@@ -75,7 +75,7 @@ var stringArray = []
 if ( $pLength > 0 ) {
   for (let i = 0; i < $pLength ; i++){
     window ['string'+i] = $mainSentence + `<strong style="color: ${ color1 }">${ eval('p'+i) }</strong>`;
-    $pArray.push(eval('string'+i));
+    $stringArray.push(eval('string'+i));
   }
 }
 

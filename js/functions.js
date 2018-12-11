@@ -59,7 +59,7 @@ console.log(test);
 console.log(test2);
 
 var $count = $(".sentences p").length;
-var $mainSentence = $(".mainSentences p").textContent;
+var $mainSentence = $(".mainSentences").textContent;
 var $pArray = [];
 console.log($count);
 if ( $count > 0 ) {

@@ -151,7 +151,7 @@ if($typedId.length){
             typeSpeed: 100,
             backSpeed: 25,
             smartBackspace: true, // this is a default
-            loop: true,
+            loop: false,
             showCursor: false,
             autoInsertCss: false
           });

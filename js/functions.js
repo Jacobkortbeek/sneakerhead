@@ -31,33 +31,6 @@ $(window).on("load",function(){
 
 let string;
 
-window.setInterval(function(){
-  var rannumber1=Math.floor(Math.random() * 256 );
-  var rannumber2=Math.floor(Math.random() * 256 );
-  var rannumber3=Math.floor(Math.random() * 256 );
-  var ranrgb="rgb("+rannumber1+","+rannumber2+","+rannumber3+")";
-}, 1050);
-
-// var color1 = randoColor();
-// var color2 = randoColor();
-// var color3 = randoColor();
-// var color4 = randoColor();
-// var color5 = randoColor();
-
-window.setInterval(function(){
-  color1 = randoColor();
-  color2 = randoColor();
-  color3 = randoColor();
-  color4 = randoColor();
-  color5 = randoColor();
-}, 12000);
-
-var test = document.getElementById( 'test1' ).textContent;
-var test2 = document.getElementById( 'test2' ).textContent;
-
-console.log(test);
-console.log(test2);
-
 var $count = $(".sentences p").length;
 var $mainSentence = document.getElementById( 'main' ).textContent;
 var $pArray = [];
@@ -79,15 +52,6 @@ if ( $pLength > 0 ) {
   }
 }
 
-// window.setInterval(function(){
-//   if ( $pLength > 0 ) {
-//     for (let i = 0; i < $pLength ; i++){
-//       window ['color'+i] = randoColor();
-//       $colors.push('color'+i);
-//     }
-//   }
-// }, 30000);
-
 var $stringArray = [];
 if ( $pLength > 0 ) {
   for (let i = 0; i < $pLength ; i++){
@@ -96,29 +60,6 @@ if ( $pLength > 0 ) {
   }
 }
 $stringArray.push(string0);
-
-// window.setInterval(function(){
-//   if ( $pLength > 0 ) {
-//     for (let i = 0; i < $pLength ; i++){
-//       window ['string'+i] = $mainSentence + `<strong style="color: ${ eval('color'+i) }">${ eval('p'+i) }</strong>`;
-//       $stringArray.push(eval('string'+i));
-//     }
-//   }
-//   $stringArray.push(string0);
-// }, 30001);
-// var string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
-// var string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
-// var string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
-// var string4 = `Why we are passionate about <strong style="color: ${ color4 }">Art</strong>`;
-// var string5 = `Why we are passionate about <strong style="color: ${ color5 }">Brands</strong>`;
-//
-// window.setInterval(function(){
-//   string1 = `Why we are passionate about <strong style="color: ${ color1 }">Sneakers</strong>`;
-//   string2 = `Why we are passionate about <strong style="color: ${ color2 }">Sneakers</strong>`;
-//   string3 = `Why we are passionate about <strong style="color: ${ color3 }">Design</strong>`;
-//   string4 = `Why we are passionate about <strong style="color: ${ color4 }">Art</strong>`;
-//   string5 = `Why we are passionate about <strong style="color: ${ color5 }">Brands</strong>`;
-// }, 12001);
 
 function randoColor() {
   var rannumber1=Math.floor(Math.random() * 256 );
@@ -179,9 +120,6 @@ if($typedId.length){
 
     }, 15000);
 }
-
-
-
 
   $(window).on("load", function() {
     if($('.gallery img').length){

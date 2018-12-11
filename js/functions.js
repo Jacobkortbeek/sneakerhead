@@ -140,22 +140,22 @@ if($typedId.length){
       typeSpeed: 100,
       backSpeed: 25,
       smartBackspace: true, // this is a default
-      loop: true,
+      loop: false,
       showCursor: false,
       autoInsertCss: false
     });
 
-    // window.setInterval(function(){
-    //     var typed3 = new Typed('#typed', {
-    //         strings: [test, test2],
-    //         typeSpeed: 100,
-    //         backSpeed: 25,
-    //         smartBackspace: true, // this is a default
-    //         loop: true,
-    //         showCursor: false,
-    //         autoInsertCss: false
-    //       });
-    // }, 12000);
+    window.setInterval(function(){
+        var typed3 = new Typed('#typed', {
+            strings: $stringArray,
+            typeSpeed: 100,
+            backSpeed: 25,
+            smartBackspace: true, // this is a default
+            loop: true,
+            showCursor: false,
+            autoInsertCss: false
+          });
+    }, 12000);
 }
 
 

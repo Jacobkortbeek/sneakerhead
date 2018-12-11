@@ -64,6 +64,7 @@ if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
     let typeId = 'test' + i;
     window ['p'+i] = document.getElementById( typeId ).textContent;
+    var pArray = [p+i];
   }
 }
 
@@ -91,6 +92,7 @@ function randoColor() {
 
 let $typedId = $('h2[id]');
 console.log('here: ', p2);
+console.log('array: ', pArray);
 if($typedId.length){
   var typed3 = new Typed('#typed', {
       strings: [test, test, test2],

@@ -167,10 +167,13 @@ if($typedId.length){
             typeSpeed: 100,
             backSpeed: 25,
             smartBackspace: true, // this is a default
-            loop: false,
+            loop: true,
             showCursor: false,
             autoInsertCss: false
           });
+
+          console.log('array: ', $stringArray);
+
     }, 15000);
 }
 

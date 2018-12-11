@@ -96,7 +96,7 @@ console.log('here: ', p2);
 console.log('array: ', $pArray);
 if($typedId.length){
   var typed3 = new Typed('#typed', {
-      strings: [test, test, test2],
+      strings: $pArray,
       typeSpeed: 100,
       backSpeed: 25,
       smartBackspace: true, // this is a default

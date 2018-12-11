@@ -38,11 +38,11 @@ window.setInterval(function(){
   var ranrgb="rgb("+rannumber1+","+rannumber2+","+rannumber3+")";
 }, 1050);
 
-var color1 = randoColor();
-var color2 = randoColor();
-var color3 = randoColor();
-var color4 = randoColor();
-var color5 = randoColor();
+// var color1 = randoColor();
+// var color2 = randoColor();
+// var color3 = randoColor();
+// var color4 = randoColor();
+// var color5 = randoColor();
 
 window.setInterval(function(){
   color1 = randoColor();
@@ -71,10 +71,19 @@ if ( $count > 0 ) {
 }
 
 var $pLength = $pArray.length;
+var $colors = [];
+if ( $pLength > 0 ) {
+  for (let i = 0; i < $pLength ; i++){
+    window ['color'+i] = randomColor();
+    $colors.push('color'+i);
+  }
+}
+
+
 var $stringArray = [];
 if ( $pLength > 0 ) {
   for (let i = 0; i < $pLength ; i++){
-    window ['string'+i] = $mainSentence + `<strong style="color: ${ color1 }">${ eval('p'+i) }</strong>`;
+    window ['string'+i] = $mainSentence + `<strong style="color: ${ eval('color'+i) }">${ eval('p'+i) }</strong>`;
     $stringArray.push(eval('string'+i));
   }
 }

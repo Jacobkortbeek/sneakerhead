@@ -57,7 +57,7 @@ if ( $pLength > 0 ) {
     $colors.push('color'+i);
   }
 }
-}
+
 var $stringArray = [];
 if ( $pLength > 0 ) {
   for (let i = 0; i < $pLength ; i++){
@@ -66,7 +66,7 @@ if ( $pLength > 0 ) {
   }
 }
 $stringArray.push(string0);
-
+}
 function randoColor() {
   var rannumber1=Math.floor(Math.random() * 256 );
   var rannumber2=Math.floor(Math.random() * 256 );

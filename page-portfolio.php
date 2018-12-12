@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 
 <main class="portfolio">
-  <div class="heading ui center aligned segment" style="background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./assets/img/nicholas-bui-634691-unsplash.jpg')!important;">
+  <div class="heading ui center aligned segment" style="background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('<?php the_field( 'header_image' ); ?>')!important;">
     <div class="ui text container">
       <h1><?php the_title(); ?></h1>
     </div>

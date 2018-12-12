@@ -10,7 +10,7 @@ $(window).on("load", function() {
 });
 
   $(function() {
-    $('.blog .column').matchHeight();
+    $('.blog .column .card').matchHeight();
   })
 
 $(window).on("load",function(){

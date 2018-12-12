@@ -113,35 +113,14 @@
   <?php if( have_rows('home_gallery') ): ?>
   <div class="ui four column stackable padded equal height grid gallery">
     <?php $i=0; while ( have_rows('home_gallery') ) : the_row(); ?>
-      <?php if($i<=1) : ?>
-    <div class="column">
+      <div class="column <?php if ($i>2) : ?>computer only tablet only<?php endif; ?>">
+
       <?php echo $i; ?>
       <div class="ui segment">
         <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
-    </div>
-  <?php elseif ($i<=3) : ?>
-    <div class="column computer only tablet only">
-      <?php echo $i; ?>
-      <div class="ui segment">
-        <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
-      </div>
-    </div>
-  <?php elseif ($i<=5) : ?>
-    <div class="column computer only tablet only">
-      <?php echo $i; ?>
-      <div class="ui segment">
-        <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
-      </div>
-    </div>
-  <?php elseif ($i<=7) : ?>
-    <div class="column computer only tablet only">
-      <?php echo $i; ?>
-      <div class="ui segment">
-        <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
-      </div>
-    </div>
-  <?php endif; ?>
+
+  </div>
 <?php $i++; endwhile; ?>
   </div>
 <?php endif; ?>

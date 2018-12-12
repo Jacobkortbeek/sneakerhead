@@ -41,7 +41,7 @@ if (document.getElementById('typed') === true) {
 var $count = $(".sentences p").length;
 var $mainSentence = document.getElementById( 'main' ).textContent;
 var $pArray = [];
-}
+
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
     let typeId = 'test' + i;
@@ -67,7 +67,7 @@ if ( $pLength > 0 ) {
   }
 }
 $stringArray.push(string0);
-
+}
 function randoColor() {
   var rannumber1=Math.floor(Math.random() * 256 );
   var rannumber2=Math.floor(Math.random() * 256 );

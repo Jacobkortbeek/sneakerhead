@@ -114,7 +114,7 @@
   <div class="ui four column stackable padded equal height grid gallery">
     <?php $i=0; while ( have_rows('home_gallery') ) : the_row(); ?>
         <?php if($i<1) : ?>
-          <?php echo $i; ?>
+          <?php echo '<1'; ?>
           <?php if($i===0) : ?>
             <div class="column">
           <?php endif; ?>
@@ -126,7 +126,7 @@
             </div>
           <?php endif; ?>
         <?php elseif ($i<3) : ?>
-          <?php echo $i; ?>
+          <?php echo '<3'; ?>
           <?php if ($i===2) : ?>
             <div class="column computer only tablet only">
           <?php endif ?>
@@ -138,6 +138,7 @@
             </div>
           <?php endif; ?>
         <?php elseif ($i<5) : ?>
+          <?php echo '<5'; ?>
           <?php if ($i===4) : ?>
             <div class="column computer only tablet only">
           <?php endif; ?>
@@ -149,6 +150,7 @@
             </div>
           <?php endif; ?>
         <?php elseif ($i<7) : ?>
+          <?php echo '<7'; ?>
           <?php if ($i===6) : ?>
             <div class="column computer only tablet only">
           <?php endif; ?>

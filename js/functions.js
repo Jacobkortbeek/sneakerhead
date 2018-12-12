@@ -48,7 +48,7 @@ if ( $count > 0 ) {
     $pArray.push(eval('p'+i));
   }
 }
-}
+
 var $pLength = $pArray.length;
 var $colors = [];
 if ( $pLength > 0 ) {
@@ -57,7 +57,7 @@ if ( $pLength > 0 ) {
     $colors.push('color'+i);
   }
 }
-
+}
 var $stringArray = [];
 if ( $pLength > 0 ) {
   for (let i = 0; i < $pLength ; i++){

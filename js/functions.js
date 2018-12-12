@@ -127,16 +127,16 @@ if($typedId.length){
     }
   });
 
-  $(window).resize(function(){
-    if($('.gallery img').length){
-      $('.gallery img').responsify();
-      console.log('gal img resize');
-    }
-    if($('.port a img').length){
-      $('.port a img').responsify();
-      console.log('port img resize');
-    }
-  });
+  // $(window).resize(function(){
+  //   if($('.gallery img').length){
+  //     $('.gallery img').responsify();
+  //     console.log('gal img resize');
+  //   }
+  //   if($('.port a img').length){
+  //     $('.port a img').responsify();
+  //     console.log('port img resize');
+  //   }
+  // });
 
 
   $('.ui.sidebar')

@@ -37,7 +37,7 @@ $(window).on("load",function(){
 
 let string;
 
-
+if($('#typed').length){
 var $count = $(".sentences p").length;
 var $mainSentence = document.getElementById( 'main' ).textContent;
 var $pArray = [];
@@ -48,7 +48,7 @@ if ( $count > 0 ) {
     $pArray.push(eval('p'+i));
   }
 }
-
+}
 var $pLength = $pArray.length;
 var $colors = [];
 if ( $pLength > 0 ) {

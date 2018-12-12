@@ -121,22 +121,22 @@ if($typedId.length){
       $('.gallery img').responsify();
       console.log('gal img');
     }
-    // if($('.port a img').length){
-    //   $('.port a img').responsify();
-    //   console.log('port img');
-    // }
+    if($('.port a img').length){
+      $('.port a img').responsify();
+      console.log('port img');
+    }
   });
 
-  // $(window).resize(function(){
-  //   if($('.gallery img').length){
-  //     $('.gallery img').responsify();
-  //     console.log('gal img resize');
-  //   }
-  //   if($('.port a img').length){
-  //     $('.port a img').responsify();
-  //     console.log('port img resize');
-  //   }
-  // });
+  $(window).resize(function(){
+    if($('.gallery img').length){
+      $('.gallery img').responsify();
+      console.log('gal img resize');
+    }
+    if($('.port a img').length){
+      $('.port a img').responsify();
+      console.log('port img resize');
+    }
+  });
 
 
   $('.ui.sidebar')

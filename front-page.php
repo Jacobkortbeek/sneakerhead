@@ -146,7 +146,7 @@
           <?php if($i===5) : ?>
             </div>
           <?php endif; ?>
-        <?php elseif ($i<=7) ?>
+        <?php elseif ($i<=7) : ?>
           <?php if ($i===6) : ?>
             <div class="column computer only tablet only">
           <?php endif; ?>

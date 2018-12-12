@@ -24,7 +24,7 @@
     <div class="sixteen wide column">
       <div class="turntable">
         <ul>
-          <?php while ( have_rows('turbtable_portfolio') ) : the_row(); ?>
+          <?php while ( have_rows('turntable_portfolio') ) : the_row(); ?>
           <li data-img-src="<?php the_sub_field('turntable_images'); ?>"></li>
         <?php endwhile; ?>
         </ul>

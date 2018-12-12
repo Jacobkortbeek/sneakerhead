@@ -37,9 +37,11 @@ $(window).on("load",function(){
 
 let string;
 
+if ($('.turntable-ui')) {
 var $count = $(".sentences p").length;
 var $mainSentence = document.getElementById( 'main' ).textContent;
 var $pArray = [];
+}
 if ( $count > 0 ) {
   for (let i = 0; i < $count ; i++) {
     let typeId = 'test' + i;

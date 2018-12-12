@@ -114,11 +114,9 @@
   <div class="ui four column stackable padded equal height grid gallery">
     <?php $i=0; while ( have_rows('home_gallery') ) : the_row(); ?>
         <?php if($i<2) : ?>
-          <?php echo '<1'; ?>
           <?php if($i===0) : ?>
             <div class="column">
           <?php endif; ?>
-          <?php echo $i; ?>
           <div class="ui segment">
             <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
           </div>
@@ -126,11 +124,9 @@
             </div>
           <?php endif; ?>
         <?php elseif ($i<4) : ?>
-          <?php echo '<3'; ?>
           <?php if ($i===2) : ?>
             <div class="column computer only tablet only">
           <?php endif ?>
-          <?php echo $i; ?>
           <div class="ui segment">
             <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
           </div>
@@ -138,11 +134,9 @@
             </div>
           <?php endif; ?>
         <?php elseif ($i<6) : ?>
-          <?php echo '<5'; ?>
           <?php if ($i===4) : ?>
             <div class="column computer only tablet only">
           <?php endif; ?>
-          <?php echo $i; ?>
           <div class="ui segment">
             <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
           </div>
@@ -150,11 +144,9 @@
             </div>
           <?php endif; ?>
         <?php elseif ($i<8) : ?>
-          <?php echo '<7'; ?>
           <?php if ($i===6) : ?>
             <div class="column computer only tablet only">
           <?php endif; ?>
-          <?php echo $i; ?>
           <div class="ui segment">
             <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
           </div>

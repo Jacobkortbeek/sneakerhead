@@ -37,7 +37,7 @@ $(window).on("load",function(){
 
 let string;
 
-if ($('.typed')) {
+if (element.classList.contains('typed')) {
 var $count = $(".sentences p").length;
 var $mainSentence = document.getElementById( 'main' ).textContent;
 var $pArray = [];

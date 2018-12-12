@@ -110,8 +110,12 @@
 <div class="ui hidden divider"></div>
 
   <!-- Rosponsify gallery -->
+  <?php if( have_rows('home_gallery') ): ?>
   <div class="ui four column stackable padded equal height grid gallery">
+    <?php $i=0; while ( have_rows('turntable_images') ) : the_row(); ?>
+      <?php if($i<=1) : ?>
     <div class="column">
+      <?php echo $i; ?>
       <div class="ui segment">
         <img src="./assets/img/hermes-rivera-770599-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
@@ -119,7 +123,9 @@
         <img src="./assets/img/satria-aditya-782549-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
     </div>
+  <?php elseif ($i=<3) : ?>
     <div class="column computer only tablet only">
+      <?php echo $i; ?>
       <div class="ui segment">
         <img src="./assets/img/xavier-teo-469050-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
@@ -127,7 +133,9 @@
         <img src="./assets/img/malvestida-magazine-458582-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
     </div>
+  <?php elseif ($i=<5) : ?>
     <div class="column computer only tablet only">
+      <?php echo $i; ?>
       <div class="ui segment">
         <img src="./assets/img/joseph-barrientos-82309-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
@@ -135,7 +143,9 @@
         <img src="./assets/img/nicholas-bui-634691-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
     </div>
+  <?php elseif ($i=<7) ?>
     <div class="column computer only tablet only">
+      <?php echo $i; ?>
       <div class="ui segment">
         <img src="./assets/img/paul-volkmer-522844-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
@@ -143,7 +153,10 @@
         <img src="./assets/img/greg-tockner-386877-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
     </div>
+  <?php endif; ?>
+<?php $i++; endwhile; ?>
   </div>
+<?php endif; ?>
 
   <div class="ui hidden divider"></div>
 

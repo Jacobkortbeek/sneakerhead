@@ -9,10 +9,7 @@
   <div class="ui hidden divider"></div>
   <!-- About -->
   <div class="about ui grid stackable container">
-    <div class="sixteen wide column">
-      <?php get_template_part( 'template-parts/typed', 'none' ); ?>
-      <h2 class="ui huge header" id="typed"> <strong></strong> </h2>
-    </div>
+    <?php get_template_part( 'template-parts/typed', 'none' ); ?>
     <div class="two column row">
       <div class="column">
         <p>

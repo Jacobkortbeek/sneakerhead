@@ -161,7 +161,7 @@
   <div class="ui hidden divider"></div>
 
   <!-- BLog -->
-  <div class="ui three column container stackable grid">
+  <div class="ui three column container stackable grid blog">
     <?php
 
       $num_posts = get_option( 'posts_per_page' );

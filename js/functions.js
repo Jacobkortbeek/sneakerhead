@@ -9,6 +9,10 @@ $(window).on("load", function() {
   console.log("window load");
 });
 
+  $(function() {
+    $('.blog .column').matchHeight();
+  })
+
 $(window).on("load",function(){
   if($('#myTurntable').length){
     $('#myTurntable').turntable({

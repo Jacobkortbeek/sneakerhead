@@ -113,17 +113,19 @@
 <?php if( have_rows('home_gallery') ): ?>
   <div class="ui four column stackable padded equal height grid gallery">
     <?php $i=0; while ( have_rows('home_gallery') ) : the_row(); ?>
+      <?php echo $i; ?>
         <?php if($i<1) : ?>
           <?php if($i===0) : ?>
             <div class="column">
           <?php endif; ?>
-        <?php echo $i; ?>
-        <div class="ui segment">
-          <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
-        </div>
-        <?php if($i===1) : ?>
+          <?php echo $i; ?>
+          <div class="ui segment">
+            <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
           </div>
-        <?php endif; ?>
+          <?php if($i===1) : ?>
+            </div>
+          <?php endif; ?>
+          <?php echo $i; ?>
         <?php elseif ($i<3) : ?>
           <?php if ($i===2) : ?>
             <div class="column computer only tablet only">

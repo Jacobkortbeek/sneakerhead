@@ -121,10 +121,10 @@ if($typedId.length){
       $('.gallery img').responsify();
       console.log('gal img');
     }
-    if($('.port a img').length){
-      $('.port a img').responsify();
-      console.log('port img');
-    }
+    // if($('.port a img').length){
+    //   $('.port a img').responsify();
+    //   console.log('port img');
+    // }
   });
 
   // $(window).resize(function(){

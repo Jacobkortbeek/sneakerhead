@@ -7,8 +7,12 @@
 <?php get_header(); ?>
 <?php
 
+  $num_posts = get_option( 'posts_per_page' );
+
   $args = array(
-    'post_type' => 'page'
+    'post_type' => 'page',
+    'posts_per_page' => $num_posts,
+    'orderby' => 'post_date'
   );
 
   $query = new WP_Query( $args );

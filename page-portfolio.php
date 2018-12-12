@@ -5,11 +5,22 @@
  */
 ?>
 <?php get_header(); ?>
+<?php
+
+  $args = array(
+    'post_type' => 'page'
+  );
+
+  $query = new WP_Query( $args );
+
+?>
 <main class="portfolio">
   <div class="heading ui center aligned segment" style="background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./assets/img/nicholas-bui-634691-unsplash.jpg')!important;">
+    <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
     <div class="ui text container">
-      <h1>Portfolio</h1>
+      <h1><?php the_title(); ?></h1>
     </div>
+  <?php endwhile; endif; ?>
   </div>
 
   <div class="ui hidden divider"></div>

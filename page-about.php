@@ -1,3 +1,9 @@
+<?php
+/**
+ * Template Name: About Page
+ *
+ */
+?>
 <?php get_header(); ?>
 <main class="about">
   <div class="ui hidden divider"></div>

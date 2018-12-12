@@ -117,28 +117,28 @@
     <div class="column">
       <?php echo $i; ?>
       <div class="ui segment">
-        <img src="./assets/img/hermes-rivera-770599-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
+        <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
     </div>
   <?php elseif ($i<=3) : ?>
     <div class="column computer only tablet only">
       <?php echo $i; ?>
       <div class="ui segment">
-        <img src="./assets/img/xavier-teo-469050-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
+        <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
     </div>
   <?php elseif ($i<=5) : ?>
     <div class="column computer only tablet only">
       <?php echo $i; ?>
       <div class="ui segment">
-        <img src="./assets/img/joseph-barrientos-82309-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
+        <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
     </div>
   <?php elseif ($i<=7) : ?>
     <div class="column computer only tablet only">
       <?php echo $i; ?>
       <div class="ui segment">
-        <img src="./assets/img/paul-volkmer-522844-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
+        <img src="<?php the_sub_field('gallery_image'); ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
     </div>
   <?php endif; ?>

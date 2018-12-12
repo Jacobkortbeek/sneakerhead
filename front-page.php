@@ -162,76 +162,45 @@
 
   <!-- BLog -->
   <div class="ui three column container stackable grid">
-    <div class="column">
-      <div class="ui fluid card">
-        <div class="image">
-          <img src="./assets/img/paul-volkmer-522844-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
-        </div>
-        <div class="content">
-          <div class="header">
-            <h2>Title</h2>
-          </div>
-          <div class="meta">
-            <a>Tag</a>
-          </div>
-          <div class="description">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-        <div class="extra content">
-          <button class="ui button">Read More</button>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="ui fluid card">
-        <div class="image">
-          <img src="./assets/img/paul-volkmer-522844-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
-        </div>
-        <div class="content">
-          <div class="header">
-            <h2>Title</h2>
-          </div>
-          <div class="meta">
-            <a>Tag</a>
-          </div>
-          <div class="description">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-        <div class="extra content">
-          <button class="ui button">Read More</button>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="ui fluid card">
-        <div class="image">
-          <img src="./assets/img/paul-volkmer-522844-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
-        </div>
-        <div class="content">
-          <div class="header">
-            <h2>Title</h2>
-          </div>
-          <div class="meta">
-            <a>Tag</a>
-          </div>
-          <div class="description">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-        <div class="extra content">
-          <button class="ui button">Read More</button>
-        </div>
-      </div>
-    </div>
+    <?php
 
+      $num_posts = get_option( 'posts_per_page' );
+
+      $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => $num_posts,
+        'orderby' => 'post_date'
+      );
+
+      $query = new WP_Query( $args );
+
+    ?>
+    <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+      <?php if ($i>3) : ?>
+    <div class="column">
+      <div class="ui fluid card">
+        <div class="image">
+          <?php the_post_thumbnail( 'medium' ); ?>
+        </div>
+        <div class="content">
+          <div class="header">
+            <h2><?php the_title(); ?></h2>
+          </div>
+          <div class="meta">
+            <a><?php the_tags(); ?></a>
+          </div>
+          <div class="description">
+            <p>
+              <?php the_excerpt(); ?>
+            </p>
+          </div>
+        </div>
+        <div class="extra content">
+          <button href="<?php the_permalink(); ?>" class="ui button">Read More</button>
+        </div>
+      </div>
+    </div>
+    <?php endif; $i++; endwhile; endif; ?>
   </div>
 </main>
 

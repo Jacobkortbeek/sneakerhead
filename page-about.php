@@ -18,9 +18,9 @@
       </div>
       <div class="column">
         <div class="img">
-          <img src="<?php if ( get_field( 'about_image') ) { ?>
+          <?php if ( get_field( 'about_image') ) { ?>
 	<img src="<?php the_field( 'about_image' ); ?>" />
-<?php } ?>" alt="">
+<?php } ?>
         </div>
       </div>
     </div>

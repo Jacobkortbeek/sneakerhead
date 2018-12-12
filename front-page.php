@@ -112,7 +112,7 @@
   <!-- Rosponsify gallery -->
   <?php if( have_rows('home_gallery') ): ?>
   <div class="ui four column stackable padded equal height grid gallery">
-    <?php $i=0; while ( have_rows('turntable_images') ) : the_row(); ?>
+    <?php $i=0; while ( have_rows('home_gallery') ) : the_row(); ?>
       <?php if($i<=1) : ?>
     <div class="column">
       <?php echo $i; ?>

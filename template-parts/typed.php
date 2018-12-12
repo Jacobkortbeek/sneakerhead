@@ -1,4 +1,4 @@
-<div class="sixteen wide column">
+<div class="sixteen wide column typed">
   <div class="mainSentences">
     <p id="main"><?php the_field( 'typed_main_sentence' ); ?></p>
   </div>

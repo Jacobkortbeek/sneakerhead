@@ -37,7 +37,7 @@ $(window).on("load",function(){
 
 let string;
 
-if ($('.turntable-ui')) {
+if ($('.typed').length) {
 var $count = $(".sentences p").length;
 var $mainSentence = document.getElementById( 'main' ).textContent;
 var $pArray = [];

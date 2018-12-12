@@ -196,7 +196,8 @@
           </div>
         </div>
         <div class="extra content">
-          <button href="<?php the_permalink(); ?>" class="ui button">Read More</button>
+          <a href="<?php the_permalink(); ?>"><button class="ui button">Read More</button></a>
+
         </div>
       </div>
     </div>

@@ -143,7 +143,7 @@
         <img src="./assets/img/nicholas-bui-634691-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
     </div>
-  <?php elseif ($i<=7) ?>
+  <?php elseif ($i<=7) : ?>
     <div class="column computer only tablet only">
       <?php echo $i; ?>
       <div class="ui segment">

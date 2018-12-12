@@ -17,49 +17,21 @@
 
 
   <!-- Turntable -->
+  <?php if( have_rows('turntable_portfolio') ): ?>
+
+
   <div class="turntable-ui ui grid" id="myTurntableTwo">
     <div class="sixteen wide column">
       <div class="turntable">
         <ul>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img01.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img02.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img03.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img04.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img05.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img06.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img07.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img08.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img09.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img10.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img11.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img12.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img13.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img14.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img15.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img16.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img17.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img18.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img19.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img20.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img21.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img22.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img23.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img24.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img25.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img26.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img27.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img28.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img29.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img30.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img31.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img32.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img33.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img34.jpg"></li>
-          <li data-img-src="./assets/img/sneaker/sneaker-home/img36.jpg"></li>
+          <?php while ( have_rows('turbtable_portfolio') ) : the_row(); ?>
+          <li data-img-src="<?php the_sub_field('turntable_images'); ?>"></li>
+        <?php endwhile; ?>
         </ul>
       </div>
     </div>
   </div>
+<?php endif; ?>
 
 
   <div class="ui hidden divider"></div>
@@ -96,7 +68,7 @@
       </div>
       </div>
       <?php endwhile; endif; wp_reset_postdata(); ?>
-      
+
   </div>
 </div>
 

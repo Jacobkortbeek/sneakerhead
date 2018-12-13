@@ -30,9 +30,9 @@
       <?php if ($i===$iNumRound) : ?>
     </div>
     <?php endif; ?>
-    <?php if($i<($iNumRound +1)) :
+    <?php if($i<($iNumRound)) :
       $i++;
-     elseif ($i===$iNumRound) :
+     elseif($i===$iNumRound) :
        $i=0;
      endif;?>
   <?php endwhile; ?>

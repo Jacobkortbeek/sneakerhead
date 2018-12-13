@@ -15,7 +15,7 @@
   <div class="ui hidden divider"></div>
 <?php $iNum=0; if( have_rows('gallery_images') ): while ( have_rows('gallery_images') ) : the_row(); ?>
 <?php $iNum++; endwhile; endif; ?>
-<?php  echo $iNum; $iNumFourth = $iNum / 4; $iNumRound =  round($iNumFourth); echo $iNumFourth; echo$iNumRound; ?>
+<?php  $iNumFourth = $iNum / 4; $iNumRound =  round($iNumFourth); ?>
 
   <div class="ui four column stackable padded equal height grid gallery">
     <?php if( have_rows('gallery_images') ): ?>
@@ -23,18 +23,18 @@
         <?php if ($i===0) : ?>
     <div class="column">
     <?php endif; ?>
-    <?php echo $i; echo $iNumRound; ?>
+
       <div class="ui segment">
         <img src="<?php the_sub_field( 'gallery_image' ) ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
       <?php if ($i>=$iNumRound) : ?>
-        <?php echo $iNumRound ?>
+
     </div>
     <?php endif; ?>
     <?php if($i<$iNumRound) :
       $i++;
      elseif($i>=$iNumRound) :
-       echo $iNumRound;
+
        $i=0;
      endif;?>
   <?php endwhile; ?>

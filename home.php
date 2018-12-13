@@ -23,7 +23,6 @@
 
     ?>
     <?php $i=0; if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
-    <a href="<?php the_permalink(); ?>">
       <div class="ui segment blog">
         <div class="ui grid">
           <div class="ui two column stackable row">
@@ -48,7 +47,6 @@
           </div>
       </div>
     </div>
-  </a>
 <div class="ui hidden divider small"></div>
 <?php endwhile; endif; ?>
 <a href="#">

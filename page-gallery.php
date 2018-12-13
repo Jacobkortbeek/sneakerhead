@@ -33,10 +33,9 @@
     <?php endif; ?>
     <?php if($i<($iNumRound)) :
       $i++;
-     elseif($i===$iNumRound) :
+     elseif($i===($iNumRound) :
        echo $iNumRound;
        $i=0;
-       else :
      endif;?>
   <?php endwhile; ?>
   <?php endif; ?>

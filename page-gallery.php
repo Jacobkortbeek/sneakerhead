@@ -23,16 +23,16 @@
         <?php if ($i===0) : ?>
     <div class="column">
     <?php endif; ?>
-    <?php echo $i; ?>
+    <?php echo $i; echo $iNumRound; ?>
       <div class="ui segment">
         <img src="<?php the_sub_field( 'gallery_image' ) ?>" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
-      <?php if ($i===12) : ?>
+      <?php if ($i===$iNumRound) : ?>
     </div>
     <?php endif; ?>
-    <?php if($i===0) :
+    <?php if($i<$iNumRound) :
       $i++;
-     elseif ($i===12) :
+     elseif ($i===$iNumRound) :
        $i=0;
      endif;?>
   <?php endwhile; ?>

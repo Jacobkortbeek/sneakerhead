@@ -16,7 +16,7 @@
 <?php $galArray = Array(); ?>
 <?php $iNum=0; if( have_rows('gallery_images') ): while ( have_rows('gallery_images') ) : the_row(); ?>
 
-<?php $iNum++; $endwhile; endif; ?>
+<?php $iNum++; endwhile; endif; ?>
 <?php echo $iNum; ?>
   <div class="ui four column stackable padded equal height grid gallery">
     <?php if( have_rows('gallery_images') ): ?>

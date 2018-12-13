@@ -16,6 +16,7 @@
 
   <div class="ui four column stackable padded equal height grid gallery">
     <?php if( have_rows('gallery_images') ): ?>
+      <?php echo sizeof('gallery_images'); ?>
       <?php $i=0; while ( have_rows('gallery_images') ) : the_row(); ?>
         <?php if ($i===0) : ?>
     <div class="column">

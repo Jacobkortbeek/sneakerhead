@@ -4,7 +4,6 @@
   <div class="row stackable">
     <div class="eight wide column very padded">
       <div class="content">
-        <h2 class="header">Title</h2>
           <?php if( !dynamic_sidebar( 'footer-text' )) : ?>
             no sidebar text
           <?php endif; ?>

@@ -30,7 +30,7 @@
       <?php if ($i===$iNumRound) : ?>
     </div>
     <?php endif; ?>
-    <?php if($i<$iNumRound) :
+    <?php if($i<($iNumRound -1)) :
       $i++;
      elseif ($i===$iNumRound) :
        $i=0;

@@ -21,16 +21,6 @@
 </a>
 </div>
 <div class="ui sidebar inverted vertical menu">
-  <?php
 
-              $defaults = array(
-                'container' => 'ul',
-                'theme_location' => 'primary-menu',
-                'menu_class' => 'navbar-nav'
-              );
-
-              wp_nav_menu( $defaults );
-
-            ?>
 </div>
 <div class="pusher">

@@ -42,8 +42,8 @@ function wpt_create_widget( $name, $id, $description ) {
 }
 
 wpt_create_widget( 'footer text block', 'footer-text', 'footer text area' );
-wpt_create_widget( 'Menu one', 'footer-logo', 'footer logo area' );
-wpt_create_widget( 'Menu two', 'footer-menu', 'footer menu area' );
+wpt_create_widget( 'Menu one', 'menu-one', 'footer menu one area' );
+wpt_create_widget( 'Menu two', 'menu-two', 'footer menu two area' );
 
 
 

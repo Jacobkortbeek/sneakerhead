@@ -21,23 +21,16 @@
 </a>
 </div>
 <div class="ui sidebar inverted vertical menu">
-  <a href="index.html" class="item">
- Home
- </a>
-  <a href="about.html" class="item">
- About
- </a>
-  <a href="portfolio.html" class="item">
- Portfolio
- </a>
- <a href="gallery.html" class="item">
- Gallery
- </a>
- <a href="blog.html" class="item">
- Blog
- </a>
- <a href="contact.html" class="item">
- Contact
- </a>
+  <?php
+
+              $defaults = array(
+                'container' => 'ul',
+                'theme_location' => 'primary-menu',
+                'menu_class' => 'navbar-nav'
+              );
+
+              wp_nav_menu( $defaults );
+
+            ?>
 </div>
 <div class="pusher">

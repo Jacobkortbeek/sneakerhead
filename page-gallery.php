@@ -26,8 +26,13 @@
       </div>
       <?php if ($i===1) : ?>
     </div>
-    <?php $i=0; endif; ?>
-  <?php $i++; endwhile; ?>
+    <?php endif; ?>
+    <?php if($i===0) :
+      $i++;
+     elseif ($i===1) :
+       $i=0;
+     endif;?>
+  <?php endwhile; ?>
   <?php endif; ?>
 
   </div>

@@ -15,14 +15,23 @@
   <div class="ui hidden divider"></div>
 
   <div class="ui four column stackable padded equal height grid gallery">
+    <?php if( have_rows('gallery_images') ): ?>
+      <?php $i=0; while ( have_rows('turn_table_one') ) : the_row(); ?>
+        <?php if ($i===0) : ?>
     <div class="column">
+    <?php endif; ?>
+    <?php echo $i; ?>
       <div class="ui segment">
         <img src="./assets/img/hermes-rivera-770599-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
       <div class="ui segment">
         <img src="./assets/img/satria-aditya-782549-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />
       </div>
+      <?php if ($i===1) : ?>
     </div>
+    <?php $i=0; endif; ?>
+  <?php $i++; endwhile; ?>
+  <?php endif; ?>
     <div class="column">
       <div class="ui segment">
         <img src="./assets/img/xavier-teo-469050-unsplash.jpg" alt="" data-focus-left=".30" data-focus-top=".12" data-focus-right=".79" data-focus-bottom=".66" />

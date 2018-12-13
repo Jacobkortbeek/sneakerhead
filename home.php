@@ -29,9 +29,9 @@
           <div class="ui two column stackable row">
             <div class="column">
               <h2><?php the_title(); ?></h2>
-              <p>
+              
                 <?php the_excerpt(); ?>
-              </p>
+
             </div>
             <div class="column">
               <div class="ui segment img">

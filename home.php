@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main class="blog">
-  <div class="heading ui center aligned segment" style="background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('<?php the_field( 'header_image' ); ?>')!important;">
+  <div class="heading ui center aligned segment" style="background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('<?php the_field( 'header_image', 145 ); ?>')!important;">
     <div class="ui text container">
       <h1><?php the_field( 'blog_title', 145 ); ?></h1>
     </div>

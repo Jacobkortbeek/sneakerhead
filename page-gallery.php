@@ -34,7 +34,7 @@
     <?php endif; ?>
     <?php if($i===0) :
       $i++;
-     elseif ($i===1) :
+     elseif ($i===$iNumRound) :
        $i=0;
      endif;?>
   <?php endwhile; ?>

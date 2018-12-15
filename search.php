@@ -5,14 +5,15 @@ Template Name: Search Page
 ?>
 <?php get_header(); ?>
 <main class="fourOfour">
+  <div class="wrap">
+  	<div id="primary" class="content-area">
+  		<main id="main" class="site-main" role="main">
 
-  <div class="ui fluid category search">
-<div class="ui icon input">
-  <?php get_search_form(); ?>
-  <i class="search icon"></i>
-</div>
-<div class="results"></div>
-</div>
+  			<?php get_search_form(); ?>
+
+  		</main><!-- #main -->
+  	</div><!-- #primary -->
+  </div><!-- .wrap -->
 
   </main>
 

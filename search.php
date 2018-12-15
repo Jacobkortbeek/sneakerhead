@@ -10,18 +10,23 @@ Template Name: Search Page
 
   			<?php get_search_form(); ?>
 
-        <?php
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        global $query_string;
+          <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-        wp_parse_str( $query_string, $search_query );
-        $search = new WP_Query( $search_query );
+<!-- 			    	<p class="meta">
+            By <?php the_author_posts_link(); ?>
+            on <?php echo the_time('l, F jS, Y'); ?>
+            <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+        </p> -->
 
-        ?>
-        <?php
-global $wp_query;
-$total_results = $wp_query->found_posts;
-?>
+        <?php the_content(); ?>
+
+      <?php endwhile; else: ?>
+
+        <p>No results :(</p>
+
+      <?php endif; ?>
 
   </div><!-- .wrap -->
 

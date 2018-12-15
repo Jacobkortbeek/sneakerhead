@@ -18,6 +18,10 @@ Template Name: Search Page
         $search = new WP_Query( $search_query );
 
         ?>
+        <?php
+global $wp_query;
+$total_results = $wp_query->found_posts;
+?>
 
   </div><!-- .wrap -->
 

@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Search Page
+*/
+?>
 <?php get_footer(); ?>
 <div class="wrap">
 

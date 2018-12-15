@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <main class="fourOfour">
 
   <div class="ui container">
@@ -10,3 +11,4 @@
   </div>
 
   </main>
+<?php get_footer(); ?>

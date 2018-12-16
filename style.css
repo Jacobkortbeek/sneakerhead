@@ -203,6 +203,9 @@ h2 {
 .contact form input {
   width: 100%; }
 
+.contact form textarea {
+  width: 100%; }
+
 .fourOfour {
   height: 60vh;
   display: flex;

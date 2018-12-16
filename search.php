@@ -18,9 +18,11 @@ Template Name: Search Page
 
             </div>
             <div class="column">
+              <?php if ( get_post_thumbnail(); ) : ?>
               <div class="ui segment img">
                 <?php the_post_thumbnail( 'medium' ); ?>
               </div>
+            <?php endif; ?>
             </div>
           </div>
           <div class="sixteen wide column">
@@ -34,7 +36,7 @@ Template Name: Search Page
     </div>
 <div class="ui hidden divider small"></div>
 <?php endwhile; endif; ?>
-  
+
 
   </main>
 

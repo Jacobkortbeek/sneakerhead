@@ -4,25 +4,37 @@ Template Name: Search Page
 */
 ?>
 <?php get_header(); ?>
-<main class="fourOfour">
-  <div class="wrap">
+<main class="blog">
+  <?php get_search_form(); ?>
+  <div class="ui container">
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <div class="ui segment blog">
+        <div class="ui grid">
+          <div class="ui two column stackable row">
+            <div class="column">
+              <h2><?php the_title(); ?></h2>
 
+                <?php the_excerpt(); ?>
 
-  			<?php get_search_form(); ?>
+            </div>
+            <div class="column">
+              <div class="ui segment img">
+                <?php the_post_thumbnail( 'medium' ); ?>
+              </div>
+            </div>
+          </div>
+          <div class="sixteen wide column">
+            <a href="<?php the_permalink(); ?>">
+              <button class="large ui right floated button">
+              More
+            </button></a>
 
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-          <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-        <?php the_excerpt(); ?>
-
-      <?php endwhile; else: ?>
-
-        <p>No results :(</p>
-
-      <?php endif; ?>
-
-  </div><!-- .wrap -->
+          </div>
+      </div>
+    </div>
+<div class="ui hidden divider small"></div>
+<?php endwhile; endif; ?>
+  
 
   </main>
 

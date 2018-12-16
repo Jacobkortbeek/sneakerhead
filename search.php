@@ -18,7 +18,7 @@ Template Name: Search Page
 
             </div>
             <div class="column">
-              <?php if ( get_post_thumbnail('medium') ) : ?>
+              <?php if ( get_post_thumbnail()=== true ) : ?>
               <div class="ui segment img">
                 <?php the_post_thumbnail( 'medium' ); ?>
               </div>

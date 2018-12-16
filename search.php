@@ -7,14 +7,14 @@ Template Name: Search Page
 <main class="blog">
 
   <div class="ui container search">
-
+    <?php get_search_form(); ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="ui segment blog">
         <div class="ui grid">
           <div class="ui two column stackable row">
             <div class="column">
               <h2><?php the_title(); ?></h2>
-              <?php get_search_form(); ?>
+
                 <?php the_excerpt(); ?>
 
             </div>

@@ -6,7 +6,7 @@ Template Name: Search Page
 <?php get_header(); ?>
 <main class="blog">
 
-  <div class="ui container">
+  <div class="ui container search">
     <?php get_search_form(); ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="ui segment blog">

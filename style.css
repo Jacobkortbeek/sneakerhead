@@ -16,6 +16,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
   font-family: 'KoHo', sans-serif; }
+  body .menu .navbar-nav {
+    list-style-type: none; }
+    body .menu .navbar-nav li {
+      border-bottom: 2px solid black; }
+      body .menu .navbar-nav li a {
+        font-size: 1.8em;
+        color: white; }
 
 .turntable {
   margin: 0px; }
